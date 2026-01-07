@@ -149,7 +149,7 @@ if __name__ == "__main__":
 
     # Test
     data_test = pd.read_csv("qm9.csv")
-    smiles_test = data_test["smiles"].iloc[15001:30001].tolist()
+    smiles_test = data_test["smiles"].iloc[15001:30000].tolist()
     y_pred, y_std = gpcal.predict(smiles_test, radius=2, nBits=2048, batch_size=2048)
     print("Predicted values:", y_pred)
     print("Uncertainty:", y_std)
