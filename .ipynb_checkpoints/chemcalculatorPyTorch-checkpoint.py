@@ -1,6 +1,3 @@
-# Este código es una alternativa al uso de GP como modelo predictivo, el uso de gpytorch es una paquetería directa de Python
-# utilizada para predecir valores.
-
 # Requisitos: torch, gpytorch, rdkit, pandas
 import torch
 import gpytorch
