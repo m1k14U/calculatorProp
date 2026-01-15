@@ -149,7 +149,6 @@ if __name__ == "__main__":
     gpcal.build_train(radius=2, nBits=2048)
     gpcal.init_model()
     gpcal.train(num_iter=300, lr=0.05)
-
     # Test
     data_test = pd.read_csv("qm9.csv")
     smiles_test = data_test["smiles"].iloc[15001:30000].tolist()
