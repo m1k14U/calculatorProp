@@ -206,7 +206,7 @@ cal.prepare_data()
 cal.train()
 cal.prediction()
 """
-## Puma cmap generator:
+## Puma cmap 
 cmap_name = 'DarkBlueToDarkGold'
 colors = ['#00008B', '#B8860B']
 
