@@ -66,7 +66,7 @@ class ChemCalculatorXGRBoost:
 
     def prepare_data(self):
         # Select the percentage of train data and define the X_train, y_train, X_test and y_test
-        if self.X and self.property_data:
+        if self.X.any() and self.property_data.any():
             self.y = self.property_data
             self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(self.X, self.y, test_size=0.2, random_state=42)
 
