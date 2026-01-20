@@ -80,14 +80,14 @@ class ChemCalculatorXGRBoost:
 
     def train(self):
         # Train the model (X_train, y_train)
-        if self.X_train and self.y_train is not None:
+        if self.X_train.any() and self.y_train.any() is not None:
             self.model.fit(self.X_train,self.y_train)
 
             return self.model
     
     def prediction(self):
         # Make a prediction with (X_test) and obtain y_pred 
-        if self.X_test and self.y_test is not None:
+        if self.X_test.any() and self.y_test.any() is not None:
             self.y_pred = self.model.predict(self.X_test)
             print("MAE: ",mean_absolute_error(self.y_test, self.y_pred))
             print("R2: ", r2_score(self.y_test, self.y_pred))
