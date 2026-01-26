@@ -1,3 +1,7 @@
+# Calculadora química
+# Modelo ML: Extreme Gradient Boosting
+# Descriptor: descriptastorus
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
